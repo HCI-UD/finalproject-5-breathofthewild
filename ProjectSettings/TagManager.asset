@@ -9,6 +9,8 @@ TagManager:
   - projectile
   - check_consent
   - consent_canvas
+  - breathBall
+  - breathText
   layers:
   - Default
   - TransparentFX

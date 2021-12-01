@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Breath_Ball : MonoBehaviour
 {
@@ -39,14 +40,19 @@ public class Breath_Ball : MonoBehaviour
 
     void breath() 
     {
+        GameObject breathText = GameObject.FindGameObjectWithTag("breathText");
+        TextMeshPro textmeshPro = breathText.GetComponent<TextMeshPro>();
         float scale = gameObject.transform.localScale.x;
         if (scale >= 2)
         {
             increase = false;
+
+            textmeshPro.SetText("Breathing in...");
         }
         else if (scale <= 0) 
         {
             increase = true;
+            textmeshPro.SetText("Breathing out...");
         }
         if (increase)
         {
