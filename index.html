@@ -27,6 +27,9 @@
             });*/
             $("a.nav-link").each(function () {
                 $(this).on("click", function () {
+                    if($(this).attr("href")!="#"){
+                        return;
+                    }
                     $("a.nav-link").each(function () {
                         $(this).removeClass("active");
                     });
@@ -70,8 +73,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank"
-                            href="https://github.com/HCI-UD/finalproject-5-breathofthewild">Source Code <i
-                                class="bi bi-link"></i> </a>
+                            href="https://github.com/HCI-UD/finalproject-5-breathofthewild">Source Code <i class="bi bi-link"></i> </a>
                     </li>
                 </ul>
 
@@ -79,8 +81,19 @@
         </div>
     </nav>
     <div class="main container">
-        <div>
-
+        <div class="home mt-3">
+            <p class="h1">Introduction to Problem:</p>
+            <hr />
+            <p class="h2">
+                <ul class="list-inline">
+                    <li class="list-inline-item">The purpose of this project is to create a VR experience that will help people to breathe better.</li>
+                    <li class="list-inline-item">We will try to improving users breathing performance by allowing them have the visulation of their breathing speed and habit.</li>
+                  </ul>
+            </p>
+            <hr class="mb-5"/>
+            <p class="h1">Storyboard</p>
+            <hr />
+            <img src="./web/storyboard.jpg" class="img-fluid" alt="storyboard">
         </div>
         <div class="survey ratio ratio-16x9" style="display: none;">
             <iframe
@@ -96,7 +109,7 @@
             <div class="row my-5">
                 <div class="col">
                     <div class="card mx-auto" style="/*width: auto; max-width: 75%;*/">
-                        <img src="./web/default.png" class="card-img-top" alt="...">
+                        <img src="./web/default.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Jiamian Wang</h5>
                             <p class="card-text">An undergraduate senior studying Computer Science at University of
@@ -107,7 +120,7 @@
                 </div>
                 <div class="col">
                     <div class="card mx-auto" style="/*width: auto; max-width: 75%;*/">
-                        <img src="./web/default.png" class="card-img-top" alt="...">
+                        <img src="./web/default.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Viva Laas</h5>
                             <p class="card-text">An undergraduate student in the College of Engineering at the
@@ -121,7 +134,7 @@
             <div class="row">
                 <div class="col">
                     <div class="card mx-auto" style="/*width: auto; max-width: 75%;*/">
-                        <img src="./web/default.png" class="card-img-top" alt="...">
+                        <img src="./web/default.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Jinheng Zhang</h5>
                             <p class="card-text">An undergraduate student in the Computer Science department of
@@ -132,7 +145,7 @@
                 </div>
                 <div class="col">
                     <div class="card mx-auto" style="/*width: auto; max-width: 75%;*/">
-                        <img src="./web/default.png" class="card-img-top" alt="...">
+                        <img src="./web/default.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Minghao Zhao</h5>
                             <p class="card-text">An undergraduate senior studying in the UD computer science department.
