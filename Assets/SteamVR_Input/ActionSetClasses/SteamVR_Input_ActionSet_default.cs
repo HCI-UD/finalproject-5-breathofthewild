@@ -105,6 +105,22 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Boolean BreathIn
+        {
+            get
+            {
+                return SteamVR_Actions.default_BreathIn;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean BreathOut
+        {
+            get
+            {
+                return SteamVR_Actions.default_BreathOut;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get

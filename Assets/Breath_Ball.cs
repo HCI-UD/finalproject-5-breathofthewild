@@ -43,7 +43,7 @@ public class Breath_Ball : MonoBehaviour
         GameObject breathText = GameObject.FindGameObjectWithTag("breathText");
         TextMeshPro textmeshPro = breathText.GetComponent<TextMeshPro>();
         float scale = gameObject.transform.localScale.x;
-        if (scale >= 2)
+        if (scale >= 1.5)
         {
             increase = false;
 

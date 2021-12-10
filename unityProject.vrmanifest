@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.epfl2.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "E:\\cisc482\\EPFL\\NEW_EPFL - Copy\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "E:\\cisc482\\NEW_EPFL\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "EPFL-2 [Testing]"
