@@ -5,7 +5,7 @@ VR Breathing is a virtual reality application that has different objects that th
 The main goal of this project was to design a program that allows the user to improve their breathing performance by observing their breathing habits through the use of the sense of sight. The goal was to have this application be a tool for people with breathing issues to work on their breathing habits.
 
 ## How to Run
-
+Import the project into Unity and use unity 2020.3.22f1 to run. There is also prebuild in the [releases](https://github.com/HCI-UD/finalproject-5-breathofthewild/releases/tag/binary) page.
 
 ## Team
 Viva Laas is an undergraduate student in the College of Engineering at the University of Delaware, pursuing a Bachelor's of Science degree in Computer Science with a concentration in Software Engineering. Her interests include how to create better User Interfaces for software applications.
