@@ -27,7 +27,8 @@
             });*/
             $("a.nav-link").each(function () {
                 $(this).on("click", function () {
-                    if($(this).attr("href")!="#"){
+                    var id = $(this).attr("id");
+                    if($(this).attr("href")!="#" || !id){
                         return;
                     }
                     $("a.nav-link").each(function () {
@@ -37,7 +38,6 @@
                         $(this).hide();
                     });
                     $(this).addClass("active");
-                    var id = $(this).attr("id");
                     $("." + id).show();
                 });
             });
@@ -65,17 +65,14 @@
                     <li class="nav-item">
                         <a class="nav-link" id="slides" href="#">PowerPoint</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="presurveyQ" href="#">Pre Survey QUESTIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="presurveyR" href="#">Pre Survey RESULTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="postsurveyQ" href="#">Post Survey QUESTIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="postsurveyR" href="#">POST Survey RESULTS</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Surveys</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="nav-link dropdown-item" id="presurveyQ" href="#">Pre Survey QUESTIONS</a></li>
+                            <li><a class="nav-link dropdown-item" id="presurveyR" href="#">Pre Survey RESULTS</a></li>
+                            <li><a class="nav-link dropdown-item" id="postsurveyQ" href="#">Post Survey QUESTIONS</a></li>
+                            <li><a class="nav-link dropdown-item" id="postsurveyR" href="#">POST Survey RESULTS</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="video" href="#">Demo Video</a>
@@ -129,7 +126,7 @@
                 frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
                 webkitallowfullscreen="true"></iframe>
         </div>
-        <div class="video">
+        <div class="video" style="display: none;">
             <p>insert video here</p>
         </div>
         <div class="about container album" style="display: none;">
